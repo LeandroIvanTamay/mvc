@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+ <html lang="en" dir="ltr">
+   <head>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+     <link rel="stylesheet" href="assets/css/style.css" />
+     <title>Redactar correo electrónico</title>
+   </head>
+   <body>
+     <div style = "background-color:#333333; color:#FFFFFF; padding:12px;" ><b>Redactar un mensaje de correo</b></div>
+     <div style = "margin:30px; width: 30%;">
+       <form name="frmMail" id="frmMail" action="correo.php" method="post">
+         <div>
+          <input type="text" name="txtRemitente" id="txtRemitente" class="form-control" style="width: 100%;" placeholder="correo del emisor"/></br>
+          <input type="password" name="txtPassword" id="txtPassword" class="form-control" style="width: 100%;" placeholder="contraseña" required/></br>
+          <input type="text" name="txtNombreVisible" id="txtNombreVisible" class="form-control" style="width: 100%;" placeholder="nombre visible"/>
+          <hr>
+         </div>
+            <input type="text" name="txtAsunto" id="txtAsunto" class="form-control" placeholder="Asunto"/></br>
+            <input type="text" name="txtMail" id="txtMail" class="form-control" value="albertcn12@gmail.com"/></br>
+            <textarea name="txtMensaje" id="txtMensaje" rows="8" cols="60" class="form-control" placeholder="Escribe aqui el contenido de tu mensaje"></textarea><p/>
+            </br>
+            <input type="submit" name="btnSubmit" value="Enviar" class="btn btn-success btn-block" />
+        </form>
+      </div>
+   </body>
+ </html>
